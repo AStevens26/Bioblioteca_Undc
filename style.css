@@ -26,7 +26,7 @@
     margin-left: 40 px;
     width: 300px;
 }
-.nav .menu{
+.menu{
     display: flex;
     margin-right: 40px;
     list-style: none;
@@ -38,13 +38,13 @@
     line-height: 80px;
     width: max-content;
 }
-.nav .menu .item a{
+.menu .item a{
     padding: 8px 12px;
     border-radius: 3px;
     text-decoration: none;
     color: aliceblue;
 }
-.nav .menu .item a:hover{
+.menu .item a:hover{
     background-color: rgba(0, 0, 0, 0.421);
     transition: 0.5s;
 }
@@ -59,32 +59,35 @@
 
     display: none;
 }
+#toggler,.nav label{
+    display: none;
+}
 
-@media(max-width:768px){
-    .nav .menu{
+@media screen and (max-width:768px){
+    .menu{
         flex-direction: column;
         margin-right: 20px;
         align-items: center;
         background-color: darkcyan;
         position: fixed;
-        left: 0;
         top: 125px;
         width: 100%;
-        padding:  20px 0;
+        
 
-        height: cac(100% - 80px);
-        overflow-y: auto;
+        
+        overflow: hidden;
+
+        
     }
 
-
-    .nav-toggle{
-        display: block;
-    }
-    .nav-menu-visible {
-        left: 0;
+    .nav label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
     }
     
-    .nav-toggle:focus:not(:focus-visible) {
-        outline: none;
+    #toggler:checked ~ .menu{
+        max-height: 100%;
     }
+    
 }
