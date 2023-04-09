@@ -1,93 +1,231 @@
 *{
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
+
 .cabecera{
-    text-align: center;
-    background-color:rgb(28, 189, 7) ;
-    height: auto;
     width: 100%;
-    top: 0;
-    left: 0;
+    height: auto;
+    background-color:#ffa600 ;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(255, 183, 58);
 }
-.cabecera h1{
-    background-color: rgb(232, 236, 48);
+header h1{
+    width: 100%;
+    text-align: center;
+    background-color: #030060;
+    color: #ffffff;
+    padding: 5px;
 }
-.nav{
-    padding: 5px 0 5px 0;
+
+.logo{
+    width: 250px;
+}
+
+.bars{
+    display: none;
+}
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5px 30px;
+    
+}
 
-    max-width: 992px;
-    margin: 0 auto;
-}
-.logo{
-    margin-left: 40 px;
-    width: 300px;
-}
-.menu{
+.nav-bar {
     display: flex;
-    margin-right: 40px;
-    list-style: none;
-    padding: 0;
+    
 }
-.nav .menu .item{
+.nav-bar li a{
+    display: block;
+    color: rgb(69, 69, 69);
     font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    width: max-content;
-}
-.menu .item a{
-    padding: 8px 12px;
-    border-radius: 3px;
-    text-decoration: none;
-    color: aliceblue;
-}
-.menu .item a:hover{
-    background-color: rgba(0, 0, 0, 0.421);
-    transition: 0.5s;
-}
-.nav-toggle{
-    color: azure;
-    background:none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
+    padding: 10px 10px ;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-weight: bold;
 
-    display: none;
-}
-#toggler,.nav label{
-    display: none;
 }
 
-@media screen and (max-width:768px){
-    .menu{
-        flex-direction: column;
-        margin-right: 20px;
-        align-items: center;
-        background-color: darkcyan;
-        position: fixed;
-        top: 125px;
+.nav-bar li a:hover{
+    color: rgb(255, 255, 254);
+    background-color: rgba(226, 226, 147, 0.523);
+}
+
+
+/*cards*/
+
+.card-ward{
+    display: flex;
+    flex-flow:wrap ;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    margin: 20px;
+}
+
+    
+
+article.card{
+    max-width: 300px;
+    height: 450px;
+    background-color: rgb(245, 245, 249);
+    border-radius: 10px;
+    box-shadow: 0 0 12px #908d8d;
+}
+.card:hover{
+    background-color: rgba(218, 255, 8, 0.304);
+    border:solid 1px rgb(3, 8, 66);
+    transition: 0.6s;
+}
+.header-card a img{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+}
+.categoria-card{
+    margin-top:5px;
+
+}
+.categoria-card span{
+    background-color: rgb(2, 30, 158);
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.texto-card{
+    margin:10px;
+}
+.texto-card h1{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.texto-card h2{
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    margin: 10px;
+}
+.texto-card p{
+    font-size: 13px;
+}
+
+/**/
+.pie{
+    height: auto;
+    background-color: rgb(60, 55, 55);
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+.pie .container{
+    padding: 50px 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow:wrap ;
+}
+.pie .container .info img{
+    width: 200px;
+}
+
+.pie .container .info ul li{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 15px;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+}
+.pie .container .info ul li a{
+    color: #908d8d;
+}
+.pie .container .info ul li a:hover{
+    color: #ffffff;
+}
+.pie .container .info ul .redes i{
+    color:gray ;
+    font-size: 20px;
+}
+.pie .container .info ul .redes i:hover{
+    color: #ffffff;
+}
+.pie .container .info ul li i{
+    margin-right: 10px;
+    color: #ffa600;
+}
+
+.pie .extra-info{
+    display: inline-flex;
+    flex-flow:wrap ;
+    padding: 30px;
+}
+.pie .extra-info .fo{
+    margin: 0 30px;
+
+}
+.pie .extra-info .fo ul{
+    justify-content: left;
+    text-align: left;
+}
+.pie .extra-info .fo ul{
+    margin: 20px 0;
+}
+
+@media(max-width:1000px){
+    
+    .bars {
+        display: block;
+        cursor:pointer;
+    }
+    .bars i{
+        padding: 10px;
+        background-color: rgba(254, 254, 254, 0.763);
+        border:solid 1px rgb(240, 239, 239);
+        border-radius: 5px;
+        
+    }
+    .nav-bar{
         width: 100%;
-        
-
-        
+        position: absolute;
+        top: 43px;
+        right: 0;
+        width: 100%;
+        right: 0;
+        background-color: gray;
+        transition: 0.6s;
         overflow: hidden;
-
-        
     }
-
-    .nav label{
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
+    .nav-bar.active{
+        right: 0;
     }
-    
-    #toggler:checked ~ .menu{
-        max-height: 100%;
+    .nav-bar {
+        display:block;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transform: 0.5s;
+        opacity: 0;
     }
-    
+    .nav-bar.active{
+        opacity: 1;
+    }
+    .nav-bar li a{
+        margin-bottom: 0px;
+    }
 }
