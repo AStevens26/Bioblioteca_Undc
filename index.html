@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <header class="cabecera" >
+    <header class="cabecera" id="inicio" >
         <h1>BIBLIOTECA UNDC</h1>
     <nav class="nav">
         <a href="#"><img class="logo" src="img/logoUndc.png" alt="Logo"></a>
@@ -190,8 +190,20 @@
         
     </section>
 
-    <aside>
-        <blockquote>Mensaje numero uno</blockquote>
+    <aside class="aside">
+        <form>
+            <label for="text">Ingrese termino</label>
+            <input type="text">
+            <button><i class="fa fa-search"></i></button>
+        </form>
+        <ol>
+            <li>Ingrnieria de sistema
+                <ul>
+                    <li>libro 1</li>
+                    <li>libro 2</li>
+                </ul>
+            </li>
+        </ol>
     </aside>
     
         
@@ -200,16 +212,16 @@
             <section class="info">
                 <img src="img/logo-principal-letras-blancas-768x384.png" alt="">
                 <ul>
-                    <li><a href=""><i class=" fa fa-phone"></i>(01) 589 2038 - Consultas</a></li>
-                    <li><a href=""><i class=" fa fa-phone"></i>(+51) 949 027 405 - Admisión</a></li>
+                    <li><a href="tel:015892038"><i class=" fa fa-phone"></i>(01) 589 2038 - Consultas</a></li>
+                    <li><a href="tel:51949027405"><i class=" fa fa-phone"></i>(+51) 949 027 405 - Admisión</a></li>
                     <li><i class=" fa fa-map-marker"></i> San Vicente, Cañete, Lima, Perú</li>
                     <li><i class=" fa fa-map-marker"></i>Local Administrativo Central</li>
                     <li><a href=""><i class=" fa fa-envelope"></i>Tramite@undc.edu.pe</a></li>
                     <li class="redes">
-                        <a href=""><i class=" fa fa-facebook"></i></a>
-                        <a href=""><i class=" fa fa-twitter"></i></a>
-                        <a href=""><i class=" fa fa-instagram"></i></a>
-                        <a href=""><i class=" fa fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/andressstebans.matossanchez"><i class=" fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/Unicanete"><i class=" fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/universidadnacionaldecanete/"><i class=" fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC_yYTSfyJBxI2cHWaW9VB-A"><i class=" fa fa-youtube"></i></a>
                     </li>
                 </ul>
             </section>
@@ -217,46 +229,45 @@
                 <div class="fo">
                     <h2>Universidad</h2>
                     <ul>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Investigacion</a></li>
-                        <li><a href="#">Licenciamiento</a></li>
-                        <li><a href="#">Convocatorias</a></li>
-                        <li><a href="#">Contactanos</a></li>
+                        <li><a href="https://portal.undc.edu.pe/eventos/">Eventos</a></li>
+                        <li><a href="https://portal.undc.edu.pe/investigacion/">Investigacion</a></li>
+                        <li><a href="https://portal.undc.edu.pe/licenciamiento/">Licenciamiento</a></li>
+                        <li><a href="https://portal.undc.edu.pe/convocatorias/">Convocatorias</a></li>
+                        <li><a href="https://portal.undc.edu.pe/contactanos/">Contactanos</a></li>
                     </ul>
                 </div>
                 <div class="fo">
-                    <h2>Universidad</h2>
+                    <h2>Académico</h2>
                     <ul>
-                        <li><a href="#">Campus Virtual</a></li>
-                        <li><a href="#">Sivireno</a></li>
-                        <li><a href="#">Biblioteca</a></li>
-                        <li><a href="#">Turniting</a></li>
-                        <li><a href="#">Sistema de Biblioteca</a></li>
+                        <li><a href="https://aula.undc.edu.pe/">Campus Virtual</a></li>
+                        <li><a href="https://sivireno.undc.edu.pe/index_login.php">Sivireno</a></li>
+                        <li><a href="https://www.undc.edu.pe/biblioteca/">Biblioteca</a></li>
+                        <li><a href="https://www.turnitin.com/es">Turniting</a></li>
+                        <li><a href="https://www.undc.edu.pe/pmb/opac_css/">Sistema de Biblioteca</a></li>
                     </ul>
                 </div>
                 <div class="fo">
-                    <h2>Universidad</h2>
+                    <h2>De interés</h2>
                     <ul>
-                        <li><a href="#">Gestion de Calidad</a></li>
-                        <li><a href="#">Transparencia Estandar</a></li>
-                        <li><a href="#">Transparencia</a></li>
-                        <li><a href="#">Universitaria</a></li>
+                        <li><a href="https://portal.undc.edu.pe/gcalidad/">Gestion de Calidad</a></li>
+                        <li><a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=15357#.XfP6QpNKjIW">Transparencia Estandar</a></li>
+                        <li><a href="https://portal.undc.edu.pe/transparencia-universitaria-ley-n-30220/">Universitaria</a></li>
                     </ul>
                 </div>
                 <div class="fo">
-                    <h2>Universidad</h2>
+                    <h2>Profesiones</h2>
                     <ul>
-                        <li><a href="#">Administración</a></li>
-                        <li><a href="#">Adm. Turismo y Hoteleria</a></li>
-                        <li><a href="#">Agronomia</a></li>
-                        <li><a href="#">Contabilidad</a></li>
-                        <li><a href="#">Ing. de Sistemas</a></li>
+                        <li><a href="https://portal.undc.edu.pe/administracion/">Administración</a></li>
+                        <li><a href="https://portal.undc.edu.pe/adm-de-turismo-y-hoteleria/">Adm. Turismo y Hoteleria</a></li>
+                        <li><a href="https://portal.undc.edu.pe/agronomia/">Agronomia</a></li>
+                        <li><a href="https://portal.undc.edu.pe/transparencia-universitaria-ley-n-30220/">Contabilidad</a></li>
+                        <li><a href="https://portal.undc.edu.pe/ingenieria_de_sistemas/">Ing. de Sistemas</a></li>
                     </ul>
                 </div>
             </section>
         </section>
         <hr>
-        <a href=""><i class="fa fa-circle-up"></i></a>
+        <button  class="subir" ><a href="#inicio"><i class="fa fa-circle-up"></i></a></i></button>
         <p>Andersson Stevens Casas Sanchez - Derechos Reservados &copy; 2023</p>
     </footer>
 
