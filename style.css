@@ -61,7 +61,12 @@ nav{
 
 
 /*cards*/
-
+main{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    height: auto;
+}
 .card-ward{
     display: flex;
     flex-flow:wrap ;
@@ -70,7 +75,7 @@ nav{
 }
 .card{
     
-    margin: 20px;
+    margin: 30px;
 }
 
     
